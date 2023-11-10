@@ -1,0 +1,428 @@
+.konsistensi {
+    padding: 72px 0 32px;
+
+    .abuabu {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #eee, rgba(#eee,.7), #eee);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+   
+    @media screen and (max-width:768px) {
+        padding: 72px 0 52px;
+    }
+    .wrap-detikx {
+        z-index: 3;
+        position: relative;
+    }
+    @keyframes roket {
+        0% {
+          bottom: 120px;
+         
+          opacity: 0;
+        }
+        25% {
+            bottom: 120px;
+            opacity: .5;
+        }
+        35% {
+            bottom: 120px;
+            opacity: 1;
+        }
+        50% {
+          bottom: 130px;
+          opacity: 1;
+        }
+
+        75% {
+            bottom: 250px;
+            opacity: 1;
+        }
+
+        85% {
+            bottom: 250px;
+            opacity: 1;
+        }
+
+        90% {
+            bottom: 250px;
+            opacity: .5;
+        }
+        100% {
+            bottom: 250px;
+            opacity: 0;
+        }
+        
+      }
+
+      @keyframes roketmob {
+        0% {
+          bottom: 80px;
+         
+          opacity: 0;
+        }
+        25% {
+            bottom: 80px;
+            opacity: .5;
+        }
+        35% {
+            bottom: 80px;
+            opacity: 1;
+        }
+        50% {
+          bottom: 130px;
+          opacity: 1;
+        }
+
+        75% {
+            bottom: 150px;
+            opacity: 1;
+        }
+
+        85% {
+            bottom: 150px;
+            opacity: 1;
+        }
+
+        90% {
+            bottom: 150px;
+            opacity: .5;
+        }
+        100% {
+            bottom: 150px;
+            opacity: 0;
+        }
+        
+      }
+    .roket {
+        animation: roket 2.2s linear infinite;
+        position: absolute;
+        bottom: 120px;
+        right: 7vw;
+        opacity: 0;
+        width: 45px;
+
+        height: auto;
+        // height: 40px;
+        z-index: 5;
+        @media screen and (max-width:768px) {
+            width: 35px;
+            height: 100px;
+            bottom: 80px;
+            right: 10vw;
+            animation: roketmob 2.2s linear infinite;
+        
+        }
+        // background-color: #69ccd7;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        
+    }
+    .st {
+        position: absolute;
+        bottom: 2vh;
+
+        right: 5vw;
+        width: 100px;
+        z-index: 4;
+        height: auto;
+        @media screen and (max-width:768px) {
+            right: 5%;
+            width: 70px;
+            bottom: 0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60px;
+        background: #69ccd7;
+        border-radius: 50% 50% 0 0;
+    }
+    // background: yellow;
+    .lipatan {
+        position: absolute;
+        right: 0;
+        top: -150px;
+        width: fit-content;
+        height: 150px;
+        &::before {
+            // content: "";
+            // inset: 0;
+            // position: absolute;
+            // background: #eee;
+            // z-index: -1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .kertas {
+        position: absolute;
+        top: -24px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .wrap {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .content {
+        display: inline-block;
+        width: 50%;
+        // z-index: 1;
+        // position: relative;
+        // border-radius: 0 16px 16px 0;
+        // left: -5vw;
+        // background: linear-gradient(to right, rgba($biru-mandiri,1),rgba($biru-mandiri,.8));
+        vertical-align: middle;
+        // color: white;
+        text-align: left;
+        // padding: 8px 16px 8px 72px;
+        h3 {
+            // position: absolute;
+            // top: -26px;
+            color: rgba($biru-mandiri,1);
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .logo {
+        width: 140px;
+        height: 140px;
+        margin: 0 16px 16px;
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        border-radius: 50%;
+        filter: drop-shadow(2px 4px 6px black);
+        @media screen and (max-width:768px) {
+            margin: 16px 8px;
+        }
+        img {
+            width: 100%;
+            border-radius: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .img {
+        width: 100%;
+        height: 460px;
+        margin: 0 auto 16px;
+        position: relative;
+        @keyframes ataskanan {
+            0%,100% {
+                right: 35%;
+                top: 10%;
+            }
+            50% {
+                top: 12%;
+                right: 33%;
+            }
+           
+            
+          }
+
+          @keyframes ataskananmob {
+            0%,100% {
+                right: 35%;
+                top: 10%;
+            }
+            50% {
+                top: 12%;
+                right: 33%;
+            }
+           
+            
+          }
+        .atas-kanan {
+            animation: ataskanan 3.2s linear infinite;
+            position: absolute;
+            right: 35%;
+            top: 10%;
+            width: 40px;
+            height: auto;
+            @media screen and (max-width:768px) {
+                // animation: initial;
+                // top: 10%;
+                width: 30px;
+                animation: ataskanan 2.2s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        @keyframes ataskiri {
+            0%,100% {
+                left: 33%;
+                top: 7%;
+            }
+            50% {
+                top: 5%;
+                left: 31%;
+            }
+           
+            
+          }
+
+          @keyframes ataskirimob {
+            0%,100% {
+                left: 30%;
+                top: 6%;
+            }
+            50% {
+                top: 4%;
+                left: 28%;
+            }
+           
+            
+          }
+        .atas-kiri {
+            animation: ataskiri 2.2s linear infinite;
+            position: absolute;
+            left: 33%;
+            top: 7%;
+            width: 40px;
+            height: auto;
+            @media screen and (max-width:768px) {
+                // animation: initial;
+                // top: 10%;
+                width: 30px;
+                top: 6%;
+                left: 30%;
+                animation: ataskirimob 2.2s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .gede {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        @media screen and (max-width:768px) {
+            height: auto;
+            
+        }
+    }
+
+    .imgs {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        border-radius: 16px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: contain;
+
+        }
+    }
+    .bg-abu {
+        background: linear-gradient(45deg, #d8d8d8, #fafafa);
+        padding: 16px;
+        position: relative;
+        z-index: 2;
+        border-radius: 24px;
+    }
+    .data {
+        display: inline-block;
+        width: 55%;
+        vertical-align: middle;
+        @media screen and (max-width:768px) {
+            width: 100%;
+
+        }
+        ul {
+            --icon-space: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin-left: 8px;
+            
+            li {
+                text-align: left;
+                padding-left: var(--icon-space);
+                &::before {
+                    content: "\f058";
+                    color: rgba($biru-mandiri,1);
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    margin-right: .5rem;
+                    font-size: 1.5rem;
+                    margin-left: calc( var(--icon-space) * -1 );
+                    @media screen and (max-width:768px) {
+                        margin-right: 0.2rem;
+                    }
+                }
+                // "\f046"
+            }
+        }
+    }
+    .title {
+        h3 {
+            font-size: 3rem;
+            line-height: 2.6rem;
+            color: $biru-mandiri;
+            @media screen and (max-width:768px) {
+                font-size: 1.8rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+
+.no-border {
+    border-top: 1px solid transparent;
+}

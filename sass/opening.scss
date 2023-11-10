@@ -1,0 +1,20 @@
+.opening {
+    background: #cce5fd;
+    .wrap-detikx {
+        position: relative;
+        z-index: 20;
+        top: -15vh;
+    }
+    .sticky {
+        position: sticky;
+        width: 100%;
+        /* inset: 0; */
+        z-index: 2;
+        top: 10vh;
+        height: 85vh;
+        @media screen and (max-width:768px) {
+            top: 5vh;
+            
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.banner {
+    background: #feede4;
+    .scroll {
+        display: none;
+        @media screen and (max-width:768px) {
+            position: absolute;
+            bottom: 105px;
+            z-index: 10;
+            color: $biru-mandiri;
+            left: 50%;
+            transform: translate(-50%);
+            display: block;
+        }
+    }
+    &::before {
+        @media screen and (max-width:768px) {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 102px;
+            background: #cce5fd;    
+        }
+    }
+    &::after {
+        @media screen and (max-width:768px) {
+            content: "";
+            position: absolute;
+            transform: translate(-50%,0);
+            left: 50%;
+            bottom: 72px;
+            width: 0;
+            height: 0;
+            border-left: 16px solid transparent;
+            border-right: 16px solid transparent;
+            border-top: 32px solid #feede4;
+            
+        }
+
+    }
+    .kertas {
+        position: absolute;
+        bottom: -15vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        transform: rotate(180deg);
+        @media screen and (max-width:768px) {
+            bottom: -3vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .title {
+        position: absolute;
+        left: 15%;
+        z-index: 12;
+        top: 10%;
+        @media screen and (max-width:768px) {
+            left: 8%;
+        }
+        h2 {
+            font-size: 3.3rem;
+            color: $biru-mandiri;
+            line-height: 3rem;
+            @media screen and (max-width:768px) {
+                font-size: 3rem;
+            }
+        }
+    }
+    .graph {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @keyframes MoveUpDown {
+        0% {
+          bottom: 5%;
+          left: 15%;
+          opacity: 0;
+        }
+        25% {
+            bottom: 5%;
+            left: 15%;
+            opacity: .5;
+        }
+        35% {
+            bottom: 5%;
+            left: 15%;
+            opacity: 1;
+        }
+        50% {
+          bottom: 10%;
+          left: 20%;
+          opacity: 1;
+        }
+
+        75% {
+            bottom: 30%;
+            left: 40%;
+            opacity: 1;
+        }
+
+        85% {
+            bottom: 30%;
+            left: 40%;
+            opacity: 1;
+        }
+
+        90% {
+            bottom: 30%;
+            left: 40%;
+            opacity: .5;
+        }
+        100% {
+            bottom: 30%;
+            left: 40%;
+            opacity: 0;
+        }
+        
+      }
+
+      @keyframes MoveUpDownMob {
+        0% {
+            bottom: 40%;
+            left: 15%;
+            opacity: 0;
+          }
+          25% {
+              bottom: 40%;
+              left: 15%;
+              opacity: .5;
+          }
+          35% {
+              bottom: 40%;
+              left: 15%;
+              opacity: 1;
+          }
+          50% {
+            bottom: 42%;
+            left: 20%;
+            opacity: 1;
+          }
+  
+          75% {
+              bottom: 50%;
+              left: 48%;
+              opacity: 1;
+          }
+  
+          85% {
+              bottom: 50%;
+              left: 48%;
+              opacity: 1;
+          }
+  
+          90% {
+              bottom: 50%;
+              left: 48%;
+              opacity: .5;
+          }
+          100% {
+              bottom: 50%;
+              left: 48%;
+              opacity: 0;
+          }
+      }
+    .terbang {
+        width: 25%;
+        z-index: 2;
+        opacity: 0;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        bottom: 5%;
+        animation: MoveUpDown 3.2s linear infinite;
+        @media screen and (max-width:768px) {
+            opacity: 1;
+            bottom: 40%;
+            animation: MoveUpDownMob 3.2s linear infinite;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
