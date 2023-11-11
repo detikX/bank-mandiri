@@ -7,7 +7,12 @@ height: 100%;
 font-family: 'Poppins';
 overflow-x: clip;
 h2, h3 {
-    font-family: 'Prompt';
+    font-family: 'Prompt' ;
+    font-weight: 700;
+}
+
+h4, h5 {
+    font-family: 'Poppins' !important ;
     font-weight: 700;
 }
 }
@@ -156,6 +161,10 @@ section {
     z-index: 21;
 }
 
+#nav, .dark {
+    background: rgba($biru-mandiri,.8) !important;
+}
+
 .footer {
     z-index: 22;
 }
@@ -170,7 +179,9 @@ section {
         height: 30px !important;
     }
 }
-
+.bg-blues {
+    background: #5bdeaa;
+}
 #nav {
     // background: rgb(105 84 29 / 80%) !important;
     backdrop-filter: blur(11px);
